@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Hoja De Vida</title>
+       <link rel="stylesheet"href="styles.css"> <!--Enlaza el archivo CSS(styles.css) npara dar estilo al HTML-->
+</head>
+<body> <!--Enlaza todo el contenido visible de la pagina (textos, imagenes, etc. ).-->
+    <div class= "container"><!--un contenedor general para organizar el contenido de la clase container se usa en css para dar estilo(como margenes o anchos)-->
+<!--encabezado con nombre y foto-->
+<header> <!--seccion semantica para el encabezado de la pagina (logo, nombre, titulo).-->
+    <img src="Imagenes/yo.jpg" alt="Mi foto" class="profile-pic">
+    <h1> Juan Andrés López Nieto</h1>
+    <p>Desarrollador Web Junior</p>
+    </header>
+
+   <!--Boton de imprimir--> 
+   <div class="print-button-container">
+       <button onclick="window.print()" class="print-button-">🖨️imprimir / Guardar PDF</button>
+       </div>
+       
+    <!--secciones principales-->
+    <section class="section">
+        <h2>📌 Informacion personal</h2>
+        <ul> <!--Crea una lista desordenada (con viñetas). Cada <li> es un item de la lista-->
+            <li> <strong>Email:</strong> juanlopez021057@gmail.com</li>
+            <li> <strong>Telefono:</strong>+57 313 688 9233</li>
+            <li> <strong>Ubicacion:</strong> Aguadas, Caldas, Colombia</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>🎓Educacion</h2>
+        <div class="item">  <!--un contenedor para agrupar elementos relacionados-->
+            <h3>Institucion Educativo Marino Gomez Estrada</h3>
+            <p>bachiller tecnico en diseño Web ┃ 2025</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>💼 Experiencia laboral</h2>
+        <div class="item">
+         <h3>Pasante en Techsolutions</h3>
+         <p>Diseño de interfaces con figma ┃ 2025</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>🛠Habilidades</h2>
+        <ul class="skills">  <!--Lista desordenada con la clase de skills para estilos personalizados(ej: mostrar habilidades)-->
+            <li>HTML/CSS</li>
+            <li>Figma</li>
+            <li>JavaScript Basico</li>
+        </ul>
+    </section>
+    <div>  <!--cierra el contenedor principal-->
+               
+    
+</body>
+</html>
