@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Hoja de Vida</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo CSS -->
+  <style>
+    /* Puedes mover estas reglas a styles.css */
+    .center-text {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    footer p {
+      text-align: right;   /* lo manda a la derecha */
+      font-weight: bold;
+      font-size: 0.9rem;
+      margin-top: 40px;
+      margin-right: 20px;  /* separa un poco del borde */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Encabezado con nombre y foto -->
+    <header>
+      <img src="imagen/yo.jpg" alt="Mi foto" class="profile-pic">
+      <h1>Juan Andrés López Nieto</h1>
+      <p>Desarrollador Web Junior</p>
+    </header>
+
+    <!-- Botón de imprimir -->
+    <div class="print-button-container">
+      <button onclick="window.print()" class="print-button">🖨️ Imprimir / Guardar PDF</button>
+    </div>
+
+    <!-- Información personal -->
+    <section class="section">
+      <h2>📌 Información personal</h2>
+      <ul>
+        <li><strong>Email:</strong> juanlopez021057@gmail.com</li>
+        <li><strong>Teléfono:</strong> +57 313 688 9233</li>
+        <li><strong>Ubicación:</strong> Aguadas, Caldas, Colombia</li>
+      </ul>
+    </section>
+
+    <!-- Educación -->
+    <section class="section">
+      <h2>🎓 Educación</h2>
+      <div class="item">
+        <h3>Institución Educativa Marino Gómez Estrada</h3>
+        <p>Bachiller Técnico en Diseño Web ┃ 2025</p>
+      </div>
+    </section>
+
+    <!-- Experiencia laboral -->
+    <section class="section">
+      <h2>💼 Experiencia laboral</h2>
+      <div class="item">
+        <h3>Pasante en Techsolutions</h3>
+        <p>Diseño de interfaces con Figma ┃ 2025</p>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="section">
+      <h2>🛠 Habilidades</h2>
+      <ul class="skills">
+        <li>HTML / CSS</li>
+        <li>Figma</li>
+        <li>JavaScript Básico</li>
+      </ul>
+    </section>
+
+    <!-- Declaración -->
+    <section class="section">
+      <h2>📄 Declaración</h2>
+      <p class="center-text">
+        Hago constar que la información aquí consignada es verídica y puede ser comprobada por cualquier persona.
+      </p>
+    </section>
+
+    <!-- Derechos de Autor -->
+    <footer class="section">
+      <p>© 2025 Juan Andrés López Nieto. Todos los derechos reservados.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
